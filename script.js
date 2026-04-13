@@ -34,13 +34,19 @@ cells.forEach((cell, index) => {
     let col = cell.getAttribute("data-col");
     col = parseInt(col);
     board[row][col] = currentPlayerMove;
-    console.log(board);
     cell.textContent = currentPlayerMove;
     cell.classList.add("disabled");
     let winnerFound = checkWinner();
      let checkForDraw = checkDraw();
     if (winnerFound) {
-      messageEl.textContent = `${currentPlayerName}, congratulations you won!`;
+     if(currentPlayerMove==="x")
+	 {
+		  messageEl.textContent = `Player1, congratulations you won!`;
+	 }
+		else if(currentPlayerMove==="o")
+		{
+			messageEl.textContent = `Player2, congratulations you won!`;
+		}
        boardEl.classList.add("disabled");
       return;
     }
