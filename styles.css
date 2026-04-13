@@ -64,7 +64,7 @@ body{
 .cell
 {
 	  height: 100px;   
-  width: 100px;
+       width: 100px;
 	background-color:pink;
 	border:1px solid black;
 	color:black;
