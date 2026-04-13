@@ -41,11 +41,11 @@ cells.forEach((cell, index) => {
     if (winnerFound) {
      if(currentPlayerMove==="x")
 	 {
-		  messageEl.textContent = `Player1, congratulations you won!`;
+		  messageEl.textContent = "Player1 congratulations you won!";
 	 }
 		else if(currentPlayerMove==="o")
 		{
-			messageEl.textContent = `Player2, congratulations you won!`;
+			messageEl.textContent = "Player2 congratulations you won!";
 		}
        boardEl.classList.add("disabled");
       return;
