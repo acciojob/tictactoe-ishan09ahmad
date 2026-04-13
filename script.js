@@ -8,7 +8,7 @@ let cells = document.querySelectorAll(".cell");
 let boardEl = document.querySelector("#board");
 let player1Name = "";
 let player2Name = "";
-let currentPlayerMove = "X";
+let currentPlayerMove = "x";
 let currentPlayerName;
 let board = [
   ["", "", ""],
@@ -53,7 +53,7 @@ cells.forEach((cell, index) => {
     }
 else
 {
-currentPlayerMove = currentPlayerMove === "X" ? "O" : "X";
+currentPlayerMove = currentPlayerMove === "x" ? "o" : "x";
     currentPlayerName =
       currentPlayerName === player1Name ? player2Name : player1Name;
     messageEl.textContent = `${currentPlayerName}, you're up`;
